@@ -316,8 +316,6 @@ D:\Work\RecruitmentAppAPI\RecruitmentAppAPI\obj\Debug\net6.0\scopedcss\bundle\Re
 D:\Work\RecruitmentAppAPI\RecruitmentAppAPI\bin\Debug\net6.0\AutoMapper.dll
 D:\Work\RecruitmentAppAPI\RecruitmentAppAPI\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\Work\RecruitmentApp API\recruitmentapi\RecruitmentAppAPI\bin\Debug\net6.0\nlog.config
-D:\Work\RecruitmentApp API\recruitmentapi\RecruitmentAppAPI\bin\Debug\net6.0\appsettings.Development.json
-D:\Work\RecruitmentApp API\recruitmentapi\RecruitmentAppAPI\bin\Debug\net6.0\appsettings.json
 D:\Work\RecruitmentApp API\recruitmentapi\RecruitmentAppAPI\bin\Debug\net6.0\RecruitmentAppAPI.exe
 D:\Work\RecruitmentApp API\recruitmentapi\RecruitmentAppAPI\bin\Debug\net6.0\RecruitmentAppAPI.deps.json
 D:\Work\RecruitmentApp API\recruitmentapi\RecruitmentAppAPI\bin\Debug\net6.0\RecruitmentAppAPI.runtimeconfig.json
