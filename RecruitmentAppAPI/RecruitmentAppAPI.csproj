@@ -32,4 +32,8 @@
 	<Using Include="System.Console" Static="true" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
 </Project>
