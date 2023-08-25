@@ -18,7 +18,7 @@ namespace RecruitmentApp.Entities
         
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string path = Path.Combine("D:\\Work\\RecruitmentAppAPI\\RecruitmentAppAPI\\", "RecruitmentAppDB.db");
+            string path = Path.Combine("D:\\Work\\RecruitmentApp API\\recruitmentapi\\RecruitmentAppAPI\\", "RecruitmentAppDB.db");
             string connection = $"Filename={path}";
             optionsBuilder.UseSqlite(connection);
             optionsBuilder.EnableSensitiveDataLogging();
