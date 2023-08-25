@@ -32,5 +32,3 @@ Coverage
 test/artifacts/*
 launchSettings.json
 artifacts
-*.db-shm
-*.db-wal
