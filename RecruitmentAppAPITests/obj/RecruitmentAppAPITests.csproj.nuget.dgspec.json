@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Work\\RecruitmentAppAPI\\RecruitmentAppAPITests\\RecruitmentAppAPITests.csproj": {}
+    "D:\\Work\\RecruitmentApp API\\recruitmentapi\\RecruitmentAppAPITests\\RecruitmentAppAPITests.csproj": {}
   },
   "projects": {
-    "D:\\Work\\RecruitmentAppAPI\\RecruitmentAppAPITests\\RecruitmentAppAPITests.csproj": {
+    "D:\\Work\\RecruitmentApp API\\recruitmentapi\\RecruitmentAppAPITests\\RecruitmentAppAPITests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\RecruitmentAppAPI\\RecruitmentAppAPITests\\RecruitmentAppAPITests.csproj",
+        "projectUniqueName": "D:\\Work\\RecruitmentApp API\\recruitmentapi\\RecruitmentAppAPITests\\RecruitmentAppAPITests.csproj",
         "projectName": "RecruitmentAppAPITests",
-        "projectPath": "D:\\Work\\RecruitmentAppAPI\\RecruitmentAppAPITests\\RecruitmentAppAPITests.csproj",
+        "projectPath": "D:\\Work\\RecruitmentApp API\\recruitmentapi\\RecruitmentAppAPITests\\RecruitmentAppAPITests.csproj",
         "packagesPath": "C:\\Users\\emanuel.enasoae\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\RecruitmentAppAPI\\RecruitmentAppAPITests\\obj\\",
+        "outputPath": "D:\\Work\\RecruitmentApp API\\recruitmentapi\\RecruitmentAppAPITests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Work\\RecruitmentAppAPI\\RecruitmentAppAPI\\RecruitmentAppAPI.csproj": {
-                "projectPath": "D:\\Work\\RecruitmentAppAPI\\RecruitmentAppAPI\\RecruitmentAppAPI.csproj"
+              "D:\\Work\\RecruitmentApp API\\recruitmentapi\\RecruitmentAppAPI\\RecruitmentAppAPI.csproj": {
+                "projectPath": "D:\\Work\\RecruitmentApp API\\recruitmentapi\\RecruitmentAppAPI\\RecruitmentAppAPI.csproj"
               }
             }
           }
@@ -113,14 +113,14 @@
         }
       }
     },
-    "D:\\Work\\RecruitmentAppAPI\\RecruitmentAppAPI\\RecruitmentAppAPI.csproj": {
+    "D:\\Work\\RecruitmentApp API\\recruitmentapi\\RecruitmentAppAPI\\RecruitmentAppAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\RecruitmentAppAPI\\RecruitmentAppAPI\\RecruitmentAppAPI.csproj",
+        "projectUniqueName": "D:\\Work\\RecruitmentApp API\\recruitmentapi\\RecruitmentAppAPI\\RecruitmentAppAPI.csproj",
         "projectName": "RecruitmentAppAPI",
-        "projectPath": "D:\\Work\\RecruitmentAppAPI\\RecruitmentAppAPI\\RecruitmentAppAPI.csproj",
+        "projectPath": "D:\\Work\\RecruitmentApp API\\recruitmentapi\\RecruitmentAppAPI\\RecruitmentAppAPI.csproj",
         "packagesPath": "C:\\Users\\emanuel.enasoae\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\RecruitmentAppAPI\\RecruitmentAppAPI\\obj\\",
+        "outputPath": "D:\\Work\\RecruitmentApp API\\recruitmentapi\\RecruitmentAppAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

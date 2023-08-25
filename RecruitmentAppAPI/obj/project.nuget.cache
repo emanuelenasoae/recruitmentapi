@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "p0NoWFpmP4chdo18iEFIomgVdHr3pbicYlg7gvQzWddA3bEM1dNc3KTGXtiTxIWhwMwyBIA9ef10wBVoy7OT/g==",
+  "dgSpecHash": "uz8+Qqcerh59+MbIPJkJhGHxtiYIdRjAMzz6qZt1h0CiupDQ/MdAURtRZOddK7ROOOKOgrY6MKmcaPLCnO+ALA==",
   "success": true,
-  "projectFilePath": "D:\\Work\\RecruitmentAppAPI\\RecruitmentAppAPI\\RecruitmentAppAPI.csproj",
+  "projectFilePath": "D:\\Work\\RecruitmentApp API\\recruitmentapi\\RecruitmentAppAPI\\RecruitmentAppAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\emanuel.enasoae\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\emanuel.enasoae\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

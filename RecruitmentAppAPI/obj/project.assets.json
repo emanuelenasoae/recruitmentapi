@@ -12856,11 +12856,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Work\\RecruitmentAppAPI\\RecruitmentAppAPI\\RecruitmentAppAPI.csproj",
+      "projectUniqueName": "D:\\Work\\RecruitmentApp API\\recruitmentapi\\RecruitmentAppAPI\\RecruitmentAppAPI.csproj",
       "projectName": "RecruitmentAppAPI",
-      "projectPath": "D:\\Work\\RecruitmentAppAPI\\RecruitmentAppAPI\\RecruitmentAppAPI.csproj",
+      "projectPath": "D:\\Work\\RecruitmentApp API\\recruitmentapi\\RecruitmentAppAPI\\RecruitmentAppAPI.csproj",
       "packagesPath": "C:\\Users\\emanuel.enasoae\\.nuget\\packages\\",
-      "outputPath": "D:\\Work\\RecruitmentAppAPI\\RecruitmentAppAPI\\obj\\",
+      "outputPath": "D:\\Work\\RecruitmentApp API\\recruitmentapi\\RecruitmentAppAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
