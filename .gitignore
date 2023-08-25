@@ -19,6 +19,8 @@
 *.log
 [Bb]in
 [Dd]ebug*/
+**/bin/*
+**/obj/*
 *.lib
 *.sbr
 obj/
