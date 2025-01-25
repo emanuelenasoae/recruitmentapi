@@ -1,6 +1,4 @@
-using RecruitmentApp.Startup;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Hosting;
+using RecruitmentAppAPI.Startup;
 
 namespace RecruitmentAppAPI
 {
@@ -8,16 +6,41 @@ namespace RecruitmentAppAPI
     {
         public static void Main(string[] args)
         {
-            
-            CreateHostBuilder().Build().Run();
-        }
+            var builder = WebApplication.CreateBuilder(args);
+            builder.Services.AddControllers();
+            builder.Services.AddSwaggerGen();
+            DIContainer.SetupDi(builder);
 
-        public static IHostBuilder CreateHostBuilder()
-        {
-            return Host.CreateDefaultBuilder().ConfigureWebHostDefaults(webBuilder =>
+            var app = builder.Build();
+
+            if (builder.Environment.IsDevelopment())
             {
-                webBuilder.UseStartup<Startup>();
+                // In Development, use the Developer Exception Page
+                app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                // In Staging/Production, route exceptions to /error
+                app.UseExceptionHandler("/error");
+            }
+
+            app.UseHttpsRedirection();
+
+            app.UseRouting();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
             });
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c => {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Swagger for RecruitmentAppAPI v1");
+                c.RoutePrefix = string.Empty;
+                c.DocumentTitle = "RecruitmentAPI";
+            });
+
+            app.Run();
         }
     }
 }
