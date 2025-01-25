@@ -44,7 +44,7 @@ namespace RecruitmentAppAPI.Startup
                 loggingBuilder.SetMinimumLevel(LogLevel.Debug);
                 loggingBuilder.AddNLog();
             });
-            serviceCollection.AddAutoMapper(typeof(MappingProfiles));
+            //serviceCollection.AddAutoMapper(typeof(MappingProfiles));
             return serviceCollection;
         }
     }
