@@ -12,6 +12,7 @@ namespace RecruitmentAppAPI.Controllers.Helper
             CreateMap<OpenRoleDto, OpenRole>().ReverseMap();
             CreateMap<RecruitmentProcessDto, RecruitmentProcess>().ReverseMap();
             CreateMap<CandidateDto, Candidate>().ReverseMap();
+            CreateMap<MemberDto, Member>().ReverseMap();
         }
     }
 }

@@ -47,7 +47,7 @@ namespace RecruitmentAppAPI.Controllers
         public async Task<IActionResult> GetById(int id)
         {
             if (!_unitOfWork.Candidates.CandidateExists(id))
-                return NotFound($"404NotFound. There is no existing candiadte with id {id}");
+                return NotFound($"404NotFound. There is no existing candidate with id {id}");
 
             var candidate = _mapper.Map<CandidateDto>(await _candidateService.GetCandidateByIdAsync(id));
 

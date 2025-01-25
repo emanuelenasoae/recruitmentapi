@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RecruitmentApp.Entities;
 
@@ -10,9 +11,11 @@ using RecruitmentApp.Entities;
 namespace RecruitmentApp.Migrations
 {
     [DbContext(typeof(RecruitmentContext))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20250125141959_AddMembers")]
+    partial class AddMembers
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.9");

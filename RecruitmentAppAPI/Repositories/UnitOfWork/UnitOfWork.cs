@@ -1,12 +1,7 @@
-﻿using Microsoft.Extensions.Logging;
-using RecruitmentApp.Entities;
+﻿using RecruitmentApp.Entities;
 using RecruitmentApp.Repositories.Concretions;
 using RecruitmentApp.Repositories.IRepositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using RecruitmentAppAPI.Repositories.IRepositories;
 
 namespace RecruitmentApp.Repositories.UnitOfWork
 {
@@ -19,6 +14,8 @@ namespace RecruitmentApp.Repositories.UnitOfWork
         private IRecruiterRepository? _recruiterRepository;
 
         private IRecruitmentProcessRepository? _recruitmentProcessRepository;
+
+        private IMemberRepository? _memberRepository;
 
         private readonly RecruitmentContext _dbContext;
 
@@ -64,6 +61,16 @@ namespace RecruitmentApp.Repositories.UnitOfWork
                 if(_recruitmentProcessRepository == null)
                     _recruitmentProcessRepository= new RecruitmentProcessRepository(_dbContext);
                 return _recruitmentProcessRepository;
+            }
+        }
+
+        public IMemberRepository Members
+        {
+            get
+            {
+                if(_memberRepository == null)
+                    _memberRepository = new MemberRepository(_dbContext);
+                return _memberRepository;
             }
         }
 

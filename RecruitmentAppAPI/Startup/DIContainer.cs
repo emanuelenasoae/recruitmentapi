@@ -33,6 +33,7 @@ namespace RecruitmentAppAPI.Startup
             serviceCollection.AddScoped<IOpenRoleService, OpenRoleService>();
             serviceCollection.AddScoped<IRecruiterService, RecruiterService>();
             serviceCollection.AddScoped<IRecruitmentProcessService, RecruitmentProcessService>();
+            serviceCollection.AddScoped<IMemberService, MemberService>();
             serviceCollection.AddScoped<CandidateValidator>();
             serviceCollection.AddScoped<OpenRoleValidator>();
             serviceCollection.AddScoped<RecruiterValidator>();
@@ -44,7 +45,7 @@ namespace RecruitmentAppAPI.Startup
                 loggingBuilder.SetMinimumLevel(LogLevel.Debug);
                 loggingBuilder.AddNLog();
             });
-            //serviceCollection.AddAutoMapper(typeof(MappingProfiles));
+            serviceCollection.AddAutoMapper(typeof(MappingProfiles));
             return serviceCollection;
         }
     }

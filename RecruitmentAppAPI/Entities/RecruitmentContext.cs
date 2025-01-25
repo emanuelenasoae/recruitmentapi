@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
 using Microsoft.Extensions.Options;
+using RecruitmentApp.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,7 @@ namespace RecruitmentApp.Entities
         public DbSet<OpenRole> OpenRoles { get; set; }
         public DbSet<Recruiter> Recruiters { get; set; }
         public DbSet<RecruitmentProcess> RecruitmentProcesses { get; set; }
+        public DbSet<Member> Members { get; set; }
         
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -71,6 +73,13 @@ namespace RecruitmentApp.Entities
                 entity.HasOne(r => r.Recruiter)
                 .WithMany(p => p.RecruitmentProcesses)
                 .HasForeignKey(r => r.RecruiterId);
+            });
+
+            modelBuilder.Entity<Member>(entity =>
+            {
+                entity.HasKey(m => m.Id);
+
+                entity.Property(m => m.Email).HasMaxLength(50);
             });
         }
     }

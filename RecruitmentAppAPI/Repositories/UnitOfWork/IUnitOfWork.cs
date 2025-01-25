@@ -1,4 +1,5 @@
 ﻿using RecruitmentApp.Repositories.IRepositories;
+using RecruitmentAppAPI.Repositories.IRepositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,7 @@ namespace RecruitmentApp.Repositories.UnitOfWork
         IOpenRoleRepository OpenRoles { get; }
         IRecruiterRepository Recruiters { get; }
         IRecruitmentProcessRepository RecruitmentProcesses { get; }
+        IMemberRepository Members { get; }
         Task<int> SaveChangesAsync();
     }
 }
