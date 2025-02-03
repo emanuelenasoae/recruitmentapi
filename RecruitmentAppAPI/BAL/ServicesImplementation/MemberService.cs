@@ -32,15 +32,26 @@ namespace RecruitmentApp.BAL.ServicesImplementation
 
         public async Task<Member?> GetMemberByIdAsync(int id)
         {
-
-            //Get member
             try
             {
                 return await _unitOfWork.Members.GetMemberByIdAsync(id);
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, $"Error occurrect while trying to fetch member with id {id}");
+                _logger.LogError(ex, $"Error occurred while trying to fetch member with id {id}");
+                throw;
+            }
+        }
+
+        public async Task<Member?> GetMemberByEmailAsync(string email)
+        {
+            try
+            {
+                return await _unitOfWork.Members.GetMemberByEmailAsync(email);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"Error occurred while trying to fetch member with email {email}");
                 throw;
             }
         }

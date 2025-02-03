@@ -7,6 +7,11 @@ using RecruitmentApp.Repositories.Concretions;
 using RecruitmentApp.Repositories.IRepositories;
 using RecruitmentApp.Repositories.UnitOfWork;
 using RecruitmentAppAPI.Controllers.Helper;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using RecruitmentAppAPI.OptionsSetup;
+using RecruitmentAppAPI.Authentication.Abstractions;
+using RecruitmentAppAPI.Authentication.Login;
+using RecruitmentAppAPI.Authentication.InfrastructureLayer.Authentication;
 
 namespace RecruitmentAppAPI.Startup
 {
@@ -46,6 +51,15 @@ namespace RecruitmentAppAPI.Startup
                 loggingBuilder.AddNLog();
             });
             serviceCollection.AddAutoMapper(typeof(MappingProfiles));
+
+            serviceCollection.AddScoped<ILoginHandler, LoginHandler>();
+            serviceCollection.AddScoped<IJwtProvider, JwtProvider>();
+
+            serviceCollection.ConfigureOptions<JwtOptionsSetup>();
+            serviceCollection.ConfigureOptions<JwtBearerOptionsSetup>();
+            serviceCollection.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer();
+
             return serviceCollection;
         }
     }

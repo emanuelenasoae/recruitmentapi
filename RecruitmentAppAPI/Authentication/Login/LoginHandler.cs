@@ -1,25 +1,29 @@
 ﻿using Microsoft.IdentityModel.Tokens;
 using RecruitmentApp.Repositories.UnitOfWork;
 using RecruitmentApp.Entities;
+using RecruitmentApp.BAL.ServicesAbstractions;
+using RecruitmentAppAPI.Authentication.Abstractions;
 
 namespace RecruitmentAppAPI.Authentication.Login
 {
-    public class LoginHandler
+    public class LoginHandler : ILoginHandler
     {
-        private readonly IUnitOfWork _unitOfWork;
+        private readonly IMemberService _memberService;
         private readonly ILogger<LoginHandler> _logger;
+        private readonly IJwtProvider _jwtProvider;
 
-        public LoginHandler(IUnitOfWork unitOfWork, ILogger<LoginHandler> logger)
+        public LoginHandler(IMemberService memberService, ILogger<LoginHandler> logger, IJwtProvider jwtProvider)
         {
-            _unitOfWork = unitOfWork;
+            _memberService = memberService;
             _logger = logger;
+            _jwtProvider = jwtProvider;
         }
 
-        /*public async Task<string> Authenticate (string email)
+        public async Task<string> Authenticate(string email)
         {
 
             //Get member
-            Member? member = await _unitOfWork.Members.GetMemberAsync(email);
+            Member? member = await _memberService.GetMemberByEmailAsync(email);
 
             if(member == null)
             {
@@ -27,8 +31,10 @@ namespace RecruitmentAppAPI.Authentication.Login
             }
 
             //Generate JWT
+            string token = _jwtProvider.Generate(member);
 
             // Return JWT
-        }*/
+            return token;
+        }
     }
 }
